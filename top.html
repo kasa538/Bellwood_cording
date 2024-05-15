@@ -41,74 +41,76 @@
 
       <section id="SEARCH">
 
-        <p class="cationary_note_search">※在庫と表示されている場合でも販売済みの自転車である場合がございます。<br>
-          そのため、お目当ての自転車がある場合は、事前に各店舗へご連絡いただくことをお勧めいたします。
-        </p>
-        <form action="/search" method="get">
+        <div class="search_form">
+          <p class="cationary_note_search">※在庫と表示されている場合でも販売済みの自転車である場合がございます。<br>
+            そのため、お目当ての自転車がある場合は、事前に各店舗へご連絡いただくことをお勧めいたします。
+          </p>
+          <form action="/search" method="get">
+            <div class="search_box_shop">
+              <span class="search_box_title">店舗別検索</span><br>
+              <label><input type="checkbox" name="category" value="" class="shop"><img src="../image/shop.png" class="shop_img"></label>
+              <label><input type="checkbox" name="category" value="" class="shop"><img src="../image/shop.png" class="shop_img"></label>
+              <label><input type="checkbox" name="category" value="" class="shop"><img src="../image/shop.png" class="shop_img"></label>
+              <label><input type="checkbox" name="category" value="" class="shop"><img src="../image/shop.png" class="shop_img"></label>
+              <label><input type="checkbox" name="category" value="" class="shop"><img src="../image/shop.png" class="shop_img"></label>
+              <label><input type="checkbox" name="category" value="" class="shop"><img src="../image/shop.png" class="shop_img"></label>
+              <label><input type="checkbox" name="category" value="" class="shop"><img src="../image/shop.png" class="shop_img"></label>
+            </div>
+            <br>
+            <span class="search_box_title">車種別検索</span><br>
+            <select name="bicycle_type">
+              <option value="">ファミリーサイクル</option>
+              <option value="">シティーサイクル</option>
+              <option value="">子供乗せ自転車</option>
+              <option value="">一般車 その他車種</option>
+              <option value="">電動アシスト子供乗せ車</option>
+              <option value="">電動アシスト その他車種</option>
+              <option value="">スポーツサイクル</option>
+              <option value="">小径・折りたたみ自転車</option>
+              <option value="">ジュニアサイクル</option>
+              <option value="">中古自転車</option>
+              <option value="">電動アシスト小径・折りたたみ車</option>
+              <option value="">電動アシストスポーツ車</option>
+            </select><br>
+            <br>
+            <span class="search_box_title">メーカー検索</span><br>
+            <select name="bicycle_maker">
+              <option value="">BRIDESTONE</option>
+              <option value="">Panasonic</option>
+              <option value="">YAMAHA</option>
+              <option value="">ｱｻﾋｻｲｸﾙ</option>
+              <option value="">玉越工業</option>
+              <option value="">ｻｶﾓﾄﾃｸﾉ</option>
+              <option value="">MARUISHI</option>
+              <option value="">Hodaka</option>
+              <option value="">GIANT</option>
+              <option value="">DAINCHI</option>
+              <option value="">RITEWAY</option>
+              <option value="">MIYATA</option>
+              <option value="">GT</option>
+              <option value="">BWCｵﾘｼﾞﾅﾙ</option>
+              <option value="">その他ﾒｰｶｰ</option>
+              <option value="">スポーツサイクル</option>
+              <option value="">小径・折りたたみ自転車</option>
+              <option value="">小径・折りたたみ自転車</option>
+              <option value="">ジュニアサイクル</option>
+              <option value="">中古自転車</option>
+              <option value="">電動アシスト小径・折りたたみ車</option>
+              <option value="">電動アシストスポーツ車</option>
+            </select><br>
+            <br>
 
-          <div class="search_box_shop">
-            <span class="search_box_title">店舗別検索</span><br>
-            <label><input type="checkbox" name="category" value="" class="shop1"><img src="../image/shop.png"></label>
-            <label><input type="checkbox" name="category" value="" class="shop2"><img src="../image/shop.png"></label>
-            <label><input type="checkbox" name="category" value="" class="shop3"><img src="../image/shop.png"></label>
-            <label><input type="checkbox" name="category" value="" class="shop4"><img src="../image/shop.png"></label>
-            <label><input type="checkbox" name="category" value="" class="shop5"><img src="../image/shop.png"></label>
-            <label><input type="checkbox" name="category" value="" class="shop5"><img src="../image/shop.png"></label>
-            <label><input type="checkbox" name="category" value="" class="shop5"><img src="../image/shop.png"></label>
-          </div> 
-          <br>
-
-          <span class="search_box_title">車種別検索</span><br>
-          <select name="bicycle_type">
-            <option value="">ファミリーサイクル</option>
-            <option value="">シティーサイクル</option>
-            <option value="">子供乗せ自転車</option>
-            <option value="">一般車 その他車種</option>
-            <option value="">電動アシスト子供乗せ車</option>
-            <option value="">電動アシスト その他車種</option>
-            <option value="">スポーツサイクル</option>
-            <option value="">小径・折りたたみ自転車</option>
-            <option value="">ジュニアサイクル</option>
-            <option value="">中古自転車</option>
-            <option value="">電動アシスト小径・折りたたみ車</option>
-            <option value="">電動アシストスポーツ車</option>
-          </select><br>
-          <br>
-
-          <span class="search_box_title">メーカー検索</span><br>
-          <select name="bicycle_maker">
-            <option value="">BRIDESTONE</option>
-            <option value="">Panasonic</option>
-            <option value="">YAMAHA</option>
-            <option value="">ｱｻﾋｻｲｸﾙ</option>
-            <option value="">玉越工業</option>
-            <option value="">ｻｶﾓﾄﾃｸﾉ</option>
-            <option value="">MARUISHI</option>
-            <option value="">Hodaka</option>
-            <option value="">GIANT</option>
-            <option value="">DAINCHI</option>
-            <option value="">RITEWAY</option>
-            <option value="">MIYATA</option>
-            <option value="">GT</option>
-            <option value="">BWCｵﾘｼﾞﾅﾙ</option>
-            <option value="">その他ﾒｰｶｰ</option>
-            <option value="">スポーツサイクル</option>
-            <option value="">小径・折りたたみ自転車</option>
-            <option value="">小径・折りたたみ自転車</option>
-            <option value="">ジュニアサイクル</option>
-            <option value="">中古自転車</option>
-            <option value="">電動アシスト小径・折りたたみ車</option>
-            <option value="">電動アシストスポーツ車</option>
-          </select><br>
-          <br>
-          <button type="submit">リセット</button>
-          <button type="submit">検索</button>
-        </form>
+            <div class="search_form_btn">
+              <button type="submit" class="reset_btn">リセット</button>
+              <button type="submit" class="search_btn">検索</button>
+            </div>
+          </form>
+        </div>
       </section>
 
       <section id="SEARCH-RESULTS">
-        <h1>検索結果</h1>
-        <div class="row row-cols-3 row-cols-sm-1 row-cols-lg-3 row-cols-xxl-4 g-4 mx-4">
+        <h1 >検索結果</h1>
+        <div class="row row-cols-sm-1 row-cols-lg-3 row-cols-xxl-4 g-4 mx-4">
           <div class="col">
             <div class="card h-100">
               <div class="card-body">

@@ -57,8 +57,8 @@ section {
 
 .wrapper {
   position: relative;
-  /* min-height: 100%; */
-  /* padding-bottom: 100px; footerの高さ */
+  min-height: 100%;
+  padding-bottom: 100px; footerの高さ
   box-sizing: border-box; /* 全て含めてmin-height:100vhに */
 }
 
@@ -85,10 +85,21 @@ footer {
 }
 
 #SEARCH {
-  padding-top: 350px;
-  max-width: 1500px;
+  padding-top:100px;
+  /* max-width: 1500px; */
 }
 
+.search_form {
+  margin-left: 11%;
+  margin-right: 11%;
+  border: black solid 1px;
+  padding: 47px;
+  border-radius: 35px;
+}
+
+.cationary_note_search {
+  color: red;
+}
 
 .search_box_shop {
   margin:  0 auto;
@@ -96,6 +107,8 @@ footer {
 
 .search_box_title {
   text-align: left;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .bicycle_img {
@@ -103,6 +116,38 @@ footer {
   /* padding: 2px auto; */
 }
 
+.shop_img {
+  padding: 10px 10px 2px 10px;
+  width: 200px;
+}
+
+input[type=checkbox] {
+  transform: scale(1.8);
+  margin-left: 8px;
+}
+
+.search_form_btn {
+  display: block;
+  width:150px;
+  margin: 0 auto;
+}
+
+.reset_btn {
+  border-radius: 5px;
+  border: black solid 1px;
+  padding: 5px 8px 5px 8px;
+  margin-right: 15px;
+  background-color: #fffcfc;
+}
+
+.search_btn {
+  border-radius: 5px;
+  border: none;
+  /* border: black solid 1px; */
+  padding: 6px 14px 6px 14px;
+  background-color: #E3925F;
+  color: #fffcfc;
+}
 
 @media screen and (max-width: 550px) {
   .header_logo {
