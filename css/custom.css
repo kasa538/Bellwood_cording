@@ -42,11 +42,12 @@ body {
 
 header {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 70px;
   background-color: #6c7822;
   padding-top: 0;
   padding-bottom: 0;
+  z-index: 1000;
 
 }
 
@@ -55,25 +56,17 @@ section {
   padding-bottom: 70px;
 }
 
-.wrapper {
-  position: relative;
-  min-height: 100%;
-  padding-bottom: 100px; footerの高さ
-  box-sizing: border-box; /* 全て含めてmin-height:100vhに */
-}
 
 footer {
-  position: absolute;
   width: 100%; 
-  bottom: 0;
-}
+  padding: 10px 0;}
 
 .footer {
   background-color: #6c7822;
   height: 100px;
   display: block;
   width: 100%; 
-  margin-bottom: -3000px;
+  margin-bottom: -1045px;
 }
 
 .footer_logo {
@@ -149,10 +142,82 @@ input[type=checkbox] {
   color: #fffcfc;
 }
 
-@media screen and (max-width: 550px) {
+.search_results_title {
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+.search_results_list {
+  margin: 0 10%;
+}
+
+.search_results_card {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: black;
+}
+
+main {
+  flex: 1; /* メインコンテンツが利用可能なスペースをすべて使うようにする */
+}
+
+.search_results_card .card_img {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* 画像の幅をカードの80%に設定 */
+}
+
+.card-text {
+  margin-left: 10%;
+}
+
+@media (max-width: 530px) {
+  header {
+    height: 50px;
+  }
+
   .header_logo {
-    margin: 0 0 0 ;
+    width: 196px;
+    height: 26px;
+    margin-left: 0px;
+  }
+
+  .header_top {
+    height: 26px;
+    width: 50px;
+    font-size: 13px;
+    margin-right: 20px;
   }
 }
-@media screen and (max-width: 530px) {
+
+@media (max-width: 406px) {
+  .shop_img {
+    padding: 10px 5px 2px 5px;
+    width: 150px;
+  }
+
+  input[type=checkbox] {
+    transform: scale(1.4);
+    margin-left: 0px;
+  }
+  .search_form {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .footer_logo {
+    width: 196px;
+    height: 26px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .search_results_list {
+    margin: 0 11%;
+  }
 }
