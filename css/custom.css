@@ -321,3 +321,31 @@ main {
 }
 
 
+/* ///////// ここからswiper ///////// */
+.wrapper{
+  max-width:500px;
+  margin:50px auto;
+}
+.slide-content{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-color: #ddd;
+}
+.main-swiper{
+  .slide-content{
+    height: 300px;    
+  }
+}
+.thumb-swiper{
+  margin-top: 20px;
+  .swiper-slide{
+    width: 100px;
+    cursor: pointer;
+  }
+  .slide-content{
+    height: 50px;
+  }
+}
+/* ///////// ここまでswiper ///////// */
