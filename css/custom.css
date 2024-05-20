@@ -230,15 +230,14 @@ main {
   padding-left: 450px;
 }
 
-/* .first_view_orange {
+.first_view_orange {
   width: calc(100% - 150px);
-
   background-color: #E3925F;
   width: 80%;
-  height: 350px;
+  height: 430px;
   z-index: 50;
-  margin-top: 80px;
-}  */
+  margin-top: -320px;
+} 
 
 .first_view {
   padding-top: 70px;
@@ -251,10 +250,40 @@ main {
     margin: 0 11%;
   }
 }
-/* @media (max-width: 1230px) {
+
+@media (max-width: 1750px) {
+  .first_view_txt {
+    padding-left: 370px;
+  }
+}
+@media (max-width: 1646px) {
+  .first_view_txt {
+    padding-left: 240px;
+  }
+}
+@media (max-width: 1519px) {
+  .first_view_txt {
+    padding-left: 150px;
+  }
+}
+@media (max-width: 1401px) {
+  .first_view_txt {
+    padding-left: 60px;
+  }
+}
+@media (max-width: 1296px) {
+  .first_view_txt {
+    padding-left: 50px;
+  }
+  .catch_copy {
+    width: 700px;
+  }
+  
+}
+
+@media (max-width: 1230px) {
   .catch_copy {
     height: 317px;
-    width: 480px;
   }
 
   .catch_copy  h1{
@@ -266,12 +295,30 @@ main {
     font-size: 14px;
     padding-left: 50px;
   }
+
+  .first_view_orange {
+    height: 356px;
+    margin-top: -290px;
+  } 
+  
+}
+
+@media (max-width: 1035px) {
+  .first_view_orange {
+    height: 288px;
+    margin-top: -288px;
+  } 
+}
+@media (max-width: 987px) {
+  .catch_copy {
+    width: 1000px;
+  }
+
 }
 
 @media (max-width: 895px) {
   .catch_copy {
-    height: 280px;
-    width: 650px;
+    height: 290px;
   }
 
   .catch_copy  h1{
@@ -282,13 +329,25 @@ main {
     font-size: 12px;
   }
 }
-
+@media (max-width: 713px) {
+  .catch_copy {
+    width: 1300px;
+    margin-top: 150px;
+  }
+  
+  .first_view_img img {
+    width: 120%;
+  }
+  .first_view_orange {
+    height: 262px;
+    margin-top: -289px;
+    width: 87%;}
+}
 @media (max-width: 645px) {
   .catch_copy {
     height: 260px;
-    width: 800px;
   }
-
+  
   .catch_copy  h1{
     font-size: 28px;
     padding-left: 30px;
@@ -300,23 +359,23 @@ main {
   }
 }
 
-@media (max-width: 556px) {
+@media (max-width: 591px) {
   .catch_copy {
-    height: 260px;
-    width: 800px;
-  }
-
-  .catch_copy  h1{
-    font-size: 28px;
-    padding-left: 30px;
+    width: 1800px;
+    margin-top: 210px;
   }
   
-  .catch_copy p {
-    padding-left: 30px;
-
+  .first_view_img img {
+    width: 150%;
   }
+  .first_view_orange {
+    height: 290px;
+    margin-top: -300px;
+    width: 100%;
 }
- */
+
+}
+
 @media (max-width: 530px) {
   header {
     height: 50px;
@@ -340,7 +399,33 @@ main {
   }
 }
 
-@media (max-width: 432px) {
+@media (max-width: 518px) {
+  .catch_copy {
+    width: 2500px;
+  }
+}
+
+@media (max-width: 518px) {
+  .catch_copy {
+    margin-top: 250px;
+  }
+
+  .catch_copy  h1{
+    font-size: 24px;
+    padding-left: 15px;
+  }
+  
+  .catch_copy p {
+    padding-left: 15px;
+    font-size: 10px;
+  }
+  
+.first_view_img img {
+  width: 240%;
+}
+
+}
+  @media (max-width: 432px) {
   .shop_img {
     padding: 0px 5px 2px 5px;
     width: 150px;
@@ -389,12 +474,26 @@ main {
   .search_results_list {
     margin: 0px 0%;
   }
+
+  .catch_copy {
+    margin-left: 3%;
+    height: 240px;
+    margin-top: 228px;
+  }
+  .first_view_img img {
+    width: 250%;
+  }
+  .first_view_img {
+    margin-right: 3%;
+  }
+
 }
 
+/* ######## serch_detail.html ####### */
 
 
 /* ///////// ここからswiper ///////// */
-.wrapper{
+/* .wrapper{
   max-width:500px;
   margin:50px auto;
 }
@@ -419,5 +518,80 @@ main {
   .slide-content{
     height: 50px;
   }
-}
+} */
 /* ///////// ここまでswiper ///////// */
+
+
+/* ～～～～～junpeiブログのswiper～～～～～ */
+/* .slider-thumbnail .swiper-slide {
+  opacity: .5;
+  transition: opacity .5s;
+  width: calc(100% / 3);
+}
+.slider-thumbnail .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+} */
+
+/* レイアウトのためのスタイル */
+/* .swiper {
+  max-width: 500px;
+  width: 100%;
+}
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+} */
+
+.detail_card {
+  padding-left: 11% ;
+  padding-right: 11%;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.detail_card_body {
+  border: solid 1px;
+  border-radius: 15px;
+  padding: 30px 0px 10px 30px;
+}
+
+.detail_card-text {
+  line-height: 2.6;
+}
+
+.contact_btn {
+  display: flex;
+  width: 345px;
+  margin: 0 auto 30px auto;
+}
+
+.back_btn,
+.tel_btn {
+  border-radius: 20px / 20px;
+  text-align: center;
+  padding: 7px 26px 7px 26px;
+
+}
+
+.back_btn {
+  background-color: #747b83;
+  margin-right: 40px;
+}
+
+.tel_btn {
+  background-color: #df975b;
+}
+
+.back_btn a,
+.tel_btn a {
+  text-decoration: none;
+  color: #fffcfc;
+}
+
+@media (min-width: 751px) {
+  a[href*="tel:"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  }
+}
