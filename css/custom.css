@@ -523,24 +523,24 @@ main {
 
 
 /* ～～～～～junpeiブログのswiper～～～～～ */
-/* .slider-thumbnail .swiper-slide {
+.slider-thumbnail .swiper-slide {
   opacity: .5;
   transition: opacity .5s;
   width: calc(100% / 3);
 }
 .slider-thumbnail .swiper-slide.swiper-slide-thumb-active {
   opacity: 1;
-} */
+}
 
 /* レイアウトのためのスタイル */
-/* .swiper {
+.swiper {
   max-width: 500px;
   width: 100%;
 }
 .swiper-slide img {
   height: auto;
   width: 100%;
-} */
+}
 
 .detail_card {
   padding-left: 11% ;
@@ -595,3 +595,4 @@ main {
   text-decoration: none;
   }
 }
+
