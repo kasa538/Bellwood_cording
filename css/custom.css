@@ -300,7 +300,7 @@ main {
     height: 356px;
     margin-top: -290px;
   } 
-  
+
 }
 
 @media (max-width: 1035px) {
@@ -329,6 +329,15 @@ main {
     font-size: 12px;
   }
 }
+
+@media (min-width: 751px) {
+  a[href*="tel:"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  }
+}
+
 @media (max-width: 713px) {
   .catch_copy {
     width: 1300px;
@@ -536,6 +545,7 @@ main {
 .swiper {
   max-width: 500px;
   width: 100%;
+  padding-top: 160px;
 }
 .swiper-slide img {
   height: auto;
@@ -588,11 +598,4 @@ main {
   color: #fffcfc;
 }
 
-@media (min-width: 751px) {
-  a[href*="tel:"] {
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-  }
-}
 
