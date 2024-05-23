@@ -12,14 +12,13 @@
 
     <meta name="description" content="STROPS#GOLF" />
     <title>title</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/custom.css" />
     <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
       <header>
@@ -119,7 +118,7 @@
               </div>
               <br>
               <span class="search_box_title">車種別検索</span><br>
-              <select name="bicycle_type">
+              <select class="form-select" aria-label="Default select">
                 <option value="">ファミリーサイクル</option>
                 <option value="">シティーサイクル</option>
                 <option value="">子供乗せ自転車</option>
@@ -135,7 +134,7 @@
               </select><br>
               <br>
               <span class="search_box_title">メーカー検索</span><br>
-              <select name="bicycle_maker">
+              <select class="form-select" aria-label="Default select">
                 <option value="">BRIDESTONE</option>
                 <option value="">Panasonic</option>
                 <option value="">YAMAHA</option>
