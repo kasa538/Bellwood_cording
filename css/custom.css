@@ -1002,26 +1002,28 @@ main {
 }
 
 .detail_card {
-  padding-left: 11% ;
-  padding-right: 11%;
-  padding-top: 100px;
-  padding-bottom: 30px;
-
+  margin-left: 11% ;
+  margin-right: 11%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  border: solid 1px;
+  padding: 16px;
 }
 
-
-.detail_card_body {
-  border: solid 1px;
-  padding: 30px 0px 10px 30px;
+.detail_card_title {
+  font-size: 18px;
+  margin-top: 50px;
 }
 
 .detail_card-text {
   line-height: 2.6;
+  margin-left: 45px;
 }
 
 .contact_btn {
+  font-size: 16px;
   display: flex;
-  width: 345px;
+  width: 382px;
   margin: 0 auto 30px auto;
 }
 
@@ -1048,3 +1050,101 @@ main {
 }
 
 
+.slider {
+  padding-top: 150px
+}
+
+.slider-thumbnail {
+  padding-top: 45px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #df975b;
+  margin-top: 52px;
+}
+
+
+@media (max-width: 640px) {
+  .swiper {
+    max-width: 460px;
+  }
+
+  .slider {
+    padding-top: 100px;
+  }
+
+  .detail_card { 
+    margin-top: 80px;
+  }
+}
+@media (max-width: 597px) {
+  .swiper {
+    max-width: 440px;
+  }
+}
+@media (max-width: 554px) {
+  .swiper {
+    max-width: 400px;
+  }
+}
+@media (max-width: 515px) {
+  .swiper {
+    max-width: 360px;
+  }
+}
+@media (max-width: 463px) {
+  .swiper {
+    max-width: 350px;
+  }
+}
+@media (max-width: 441px) {
+  .swiper {
+    max-width: 310px;
+  }
+}
+
+@media (max-width: 432px) {
+  .detail_card {
+      margin-left: 3%;
+      margin-right: 3%;
+  }
+
+  .contact_btn {
+    width: 306px;
+  }
+
+  .back_btn {
+    font-size: 14px;
+    padding: 9px 20px 6px 20px;
+    margin-right: 25px;
+  }
+  .tel_btn {
+    font-size: 14px;
+    padding: 9px 20px 6px 20px;
+  }
+  .detail_card { 
+    margin-top: 54px;
+  }
+}
+
+@media (max-width: 345px) {
+  .swiper {
+    max-width: 250px;
+  }
+  .contact_btn {
+    width: 293px;
+  }
+
+  .back_btn {
+    margin-right: 12px;
+  }
+
+}
+
+/* ＜＞ボタン大きさ
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+  font-size: 33px;
+} */
