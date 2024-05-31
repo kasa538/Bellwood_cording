@@ -2,8 +2,8 @@
 body {
   background-color: #fffcfc;
   margin: 0;
-
 }
+
 
 .header_logo {
   background-image: url(../image/logo.png);
@@ -65,7 +65,7 @@ footer {
   height: 100px;
   display: block;
   width: 100%; 
-  margin-bottom: -1045px;
+  margin: 0;
 }
 
 .footer_logo {
@@ -978,7 +978,16 @@ main {
 }
 /* ######## serch_detail.html ####### */
 
+#SEARCH-DETAIL {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
 
+.wrapper {
+  flex: 1;
+  margin: 0;
+}
 
 
 .slider-thumbnail .swiper-slide {
@@ -1061,15 +1070,126 @@ main {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #df975b;
+  color: #fcfcfc;
+  background-color: gray;
   margin-top: 52px;
+  opacity: 70%;
 }
 
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  font-size: 25px;
+}
 
+.swiper-button-prev {
+  left: 5px; /* 左の矢印をコンテナの左端からさらに離す */
+}
+
+.swiper-button-next {
+  right: 5px; /* 右の矢印をコンテナの右端からさらに離す */
+}
+
+@media (min-width: 2800px) {
+  .swiper {
+    max-width: 1700px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 45px; /* 矢印の幅を調整 */
+    height: 73px; /* 矢印の高さを調整 */
+  }
+}
+
+@media (max-width: 2800px) {
+  .swiper {
+    max-width: 1600px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 45px; /* 矢印の幅を調整 */
+    height: 73px; /* 矢印の高さを調整 */
+  }
+
+}
+@media (max-width: 2550px) {
+  .swiper {
+    max-width: 1400px;
+  }
+}
+@media (max-width: 2400px) {
+  .swiper {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 2250px) {
+  .swiper {
+    max-width: 1150px;
+  }
+}
+@media (max-width: 2100px) {
+  .swiper {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 1950px) {
+  .swiper {
+    max-width: 1050px;
+  }
+  
+}
+@media (max-width: 1800px) {
+  .swiper {
+    max-width: 950px;
+  }
+}
+@media (max-width: 1650px) {
+  .swiper {
+    max-width: 850px;
+  }
+}
+@media (max-width: 1500px) {
+  .swiper {
+    max-width: 750px;
+  }
+}
+@media (max-width: 1350px) {
+  .swiper {
+    max-width: 670px;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    width: 27px; /* 矢印の幅を調整 */
+    height: 44px; /* 矢印の高さを調整 */
+  }
+}
+@media (max-width: 1000px) {
+  .swiper {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  font-size: 10px;
+  }
+
+
+  .swiper-button-prev, .swiper-button-next {
+    width: 18px; /* 矢印の幅を調整 */
+    height: 29px; /* 矢印の高さを調整 */
+  }
+}
 @media (max-width: 640px) {
   .swiper {
     max-width: 460px;
   }
+
+  .swiper-button-prev,
+.swiper-button-next {
+  margin-top: 34px;
+}
+
 
   .slider {
     padding-top: 100px;
@@ -1087,6 +1207,16 @@ main {
 @media (max-width: 554px) {
   .swiper {
     max-width: 400px;
+  }
+  
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    font-size: 10px;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    width: 12px; /* 矢印の幅を調整 */
+    height: 29px; /* 矢印の高さを調整 */
   }
 }
 @media (max-width: 515px) {
@@ -1143,8 +1273,4 @@ main {
 
 }
 
-/* ＜＞ボタン大きさ
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: 'next';
-  font-size: 33px;
-} */
+
